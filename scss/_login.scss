@@ -1,0 +1,119 @@
+/* formCSS */
+.login-form form{
+    background-color: #EFE9E7;
+    padding: 20px;
+    color: #3D1101;
+    h3{
+        font-size: 48px;
+        text-align: center;
+        padding-top: 20px;
+    }
+    p{
+        font-size: 20px;
+        font-weight: bolder;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+}
+.login-userform{
+    width: 40%;
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 15px;
+    box-shadow: 2px 2px 5px 2px rgb(170, 170, 170);
+    border-top: 5px solid #F56C23;
+    flex-direction: column;
+    h4{
+        text-align: center;
+        font-size: 18px;
+    }
+    .loginform-infor{
+        width: 90%;
+        padding: 60px 10px;
+        margin: 0 auto;
+        a{
+            display: block;
+            color: #f56c23;
+            &:hover{
+                font-weight: bolder;
+            }
+        }
+    }
+}
+.loginform-group{
+    border-radius: 3px;
+    margin-bottom: 10px;
+    input{
+        width: 100%;
+        padding: 5px;
+        font-size: 14px;
+        border-radius: 4px;
+        caret-color: #3D1101;
+        border: 1px solid rgb(168, 168, 168);
+        &:focus{
+            border: 1px solid #3D1101;
+        }
+    }
+}
+.fa-envelope, .fa-lock{
+    position: absolute;
+    padding: 7px;
+    opacity: 0.3;
+}
+.login-btgroup{
+    display: flex;
+    justify-content: space-between;
+}
+.login-button{
+    width: 45%;
+    height: 32px;
+    text-align: center;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 10px;
+    color: #fff;
+    &:hover{
+        margin-top: 8px;
+        box-shadow: 1px 1px 7px 2px rgb(211, 211, 211);
+        cursor: pointer;
+        transition: all 0.2s;
+        color: yellow;
+    }
+}
+.login-btgroup{
+    .login-registerbt{
+        font-size: 12.5px;
+        padding: 9px;
+        background-color: #a09e9e;
+        &:hover{
+            color: yellow;
+        }
+    }
+    .login-resetbt{
+        background-color: #f56c23;
+
+    }
+}
+@media (max-width:767px) {
+    .login-userform{
+        width: 70%;
+    }
+    .loginform-infor{
+        width: 90%;
+        padding: 30px 10px;
+    }
+}
+@media (max-width:480px) {
+    .login-userform{
+        width: 90%;
+    }
+    .loginform-infor{
+        padding: 20px 0;
+    }
+}
+@media (max-width:375px) {
+    .login-form form h3{
+        font-size: 36px;
+    }
+}
